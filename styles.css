@@ -1,0 +1,91 @@
+:root {
+  --lightcyan: hsl(193, 38%, 86%);
+  --neongreen: hsl(150, 100%, 66%);
+  --grayishblue: hsl(217, 19%, 38%);
+  --darkgrayishblue: hsl(217, 19%, 24%);
+  --darkblue: hsl(218, 23%, 16%);
+}
+
+html,
+body {
+  margin: 0px;
+  height: 100%;
+  font-family: "Manrope", sans-serif;
+}
+
+body {
+  background-color: var(--darkblue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.advice-box {
+  width: 600px;
+  height: 350px;
+  border-radius: 20px;
+  background-color: var(--darkgrayishblue);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+p {
+  color: var(--neongreen);
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 14px;
+}
+
+h1 {
+  color: var(--lightcyan);
+}
+
+footer {
+  position: relative;
+  bottom: -270px;
+}
+
+.advice-quote {
+  height: 150px;
+}
+
+.box-hr {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.box-line {
+  height: 1px;
+  width: 220px;
+  background-color: var(--grayishblue);
+}
+
+.box-boldline {
+  width: 5px;
+  height: 15px;
+  border-radius: 25px;
+  background-color: var(--lightcyan);
+}
+
+button {
+  width: 70px;
+  height: 70px;
+  border-radius: 50px;
+  border: none;
+  background-color: var(--neongreen);
+  position: relative;
+  left: 265px;
+  top: -35px;
+  transition: box-shadow 0.5s;
+}
+
+#btn:hover {
+  -webkit-box-shadow: 0px 1px 50px 0px var(--neongreen);
+  -moz-box-shadow: 0px 1px 50px 0px var(--neongreen);
+  box-shadow: 0px 1px 50px 0px var(--neongreen);
+  cursor: pointer;
+}

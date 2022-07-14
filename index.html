@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
     <title>Frontend Mentor | Advice generator app</title>
   </head>
@@ -18,7 +19,7 @@
       <div class="advice-box">
         <p>Advice # <span id="adviceId">0<span></p>
         <div class="advice-quote">
-          <h1>“<span id="advice">Click a dice to get your advice.</span>”</h1>
+          <h1 id="advice-text" class="animate__animated">“<span id="advice">Click a dice to get your advice.</span>”</h1>
         </div>
         <div class="box-hr">
           <div class="box-line"></div>
@@ -27,11 +28,11 @@
           <div class="box-line"></div>
         </div>
       </div>
-      <button id="btn"><img src="images/icon-dice.svg" /></button>
+      <button id="btn"><img id="dice" src="images/icon-dice.svg" /></button>
     </main>
 
     <footer>
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Your Name Here</a>.
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="https://github.com/happnd">happnd</a>.
     </footer>
     <script src="app.js"></script>
   </body>
